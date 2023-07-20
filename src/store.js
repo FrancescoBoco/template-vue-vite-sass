@@ -2,5 +2,6 @@ import {reactive} from 'vue'
 
 export const store = reactive({
     loading: true,
-    searchType: ""
+    searchText: "",
+    movies: [],
 })

@@ -55,12 +55,23 @@ export default {
        return 'https://image.tmdb.org/t/p/original' + Tv
     },
     averageVote(vote){
-        vote = Math.floor(vote / 2)
+        vote = Math.ceil(vote / 2)
         if(vote = 1){
-            vote = '<i class="fa-solid fa-star" style="color: #ffe45c;"></i>'+
-            '<i class="fa-regular fa-star"></i>'+
-            '<i class="fa-regular fa-star"></i>'+
-            '<i class="fa-regular fa-star"></i>'+
+            vote = '<i class="fa-solid fa-star" style="color: #ffe45c;"></i>'
+            '<i class="fa-regular fa-star"></i>'
+            '<i class="fa-regular fa-star"></i>'
+            '<i class="fa-regular fa-star"></i>'
+            '<i class="fa-regular fa-star"></i>'
+        return vote
+    }},
+    averageVote(vote){
+        vote = Math.ceil(vote / 2)
+        if(vote = 2){
+            vote = 
+            '<i class="fa-solid fa-star" style="color: #ffe45c;"></i>'
+            '<i class="fa-solid fa-star" style="color: #ffe45c;"></i>'
+            '<i class="fa-regular fa-star"></i>'
+            '<i class="fa-regular fa-star"></i>'
             '<i class="fa-regular fa-star"></i>'
         return vote
     }}

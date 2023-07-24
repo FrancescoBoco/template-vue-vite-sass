@@ -23,17 +23,6 @@ export default {
   },
   methods: {
 
-  },
-  created(){
-    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=21113d2a59214cb58de84d087e9a0b2d&query=`, {
-      params:{
-        api_key: '21113d2a59214cb58de84d087e9a0b2d',
-        query: this.store.searchText
-      }
-        }).then(response => {
-          console.log(response)
-
-      });
   }}
 </script>
 
